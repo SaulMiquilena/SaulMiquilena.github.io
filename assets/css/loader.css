@@ -1,0 +1,123 @@
+.loader_titulo {
+    height: 30px;
+    margin: 10px;
+    width: 300px;
+    animation: loader 1s infinite ease-in-out;
+    -webkit-animation: loader 1s infinite ease-in-out;
+}
+
+.loader_subtitulo {
+    height: 15px;
+    margin: 10px;
+    width: 400px;
+    animation: loader 1s infinite ease-in-out;
+    -webkit-animation: loader 1s infinite ease-in-out;
+}
+
+.loader_fecha {
+    height: 15px;
+    margin: 10px;
+    width: 150px;
+    animation: loader 1s infinite ease-in-out;
+    -webkit-animation: loader 1s infinite ease-in-out;
+}
+
+.loader_autor {
+    height: 12px;
+    margin: 10px;
+    width: 120px;
+    animation: loader 1s infinite ease-in-out;
+    -webkit-animation: loader 1s infinite ease-in-out;
+}
+
+.loader_logo {
+    animation: image-loader 1s infinite ease-in-out;
+    -webkit-animation: image-loader 1s infinite ease-in-out;
+}
+
+.loader_imagen {
+    animation: image-loader 1s infinite ease-in-out;
+    -webkit-animation: image-loader 1s infinite ease-in-out;
+}
+
+.loader_imagen_single {
+    animation: image-loader 1s infinite ease-in-out;
+    -webkit-animation: image-loader 1s infinite ease-in-out;
+}
+
+.loader_articulo {
+    height: 10px;
+    margin: 10px;
+    width: 800px;
+    animation: loader 1s infinite ease-in-out;
+    -webkit-animation: loader 1s infinite ease-in-out;
+}
+
+.loader_articulo_single {
+    height: 10px;
+    margin: 10px;
+    width: 100%;
+    animation: loader 1s infinite ease-in-out;
+    -webkit-animation: loader 1s infinite ease-in-out;
+}
+
+.loader_seguir_leyendo {
+    height: 30px;
+    margin: 10px;
+    width: 100px;
+    animation: loader 1s infinite ease-in-out;
+    -webkit-animation: loader 1s infinite ease-in-out;
+}
+
+@keyframes loader {
+    0% {
+        background-color: rgba(255, 116, 140, 0.1);
+    }
+    50% {
+        background-color: rgba(255, 116, 140, 0.3);
+    }
+    100% {
+        background-color: rgba(255, 116, 140, 0.1);
+    }
+}
+
+@-webkit-keyframes loader {
+    0% {
+        background-color: rgba(255, 116, 140, 0.1);
+    }
+    50% {
+        background-color: rgba(255, 116, 140, 0.3);
+    }
+    100% {
+        background-color: rgba(255, 116, 140, 0.1);
+    }
+}
+
+@keyframes image-loader {
+    0% {
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+    }
+    50% {
+        -webkit-filter: grayscale(0.3);
+        filter: grayscale(0.3);
+    }
+    100% {
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+    }
+}
+
+@-webkit-keyframes loader {
+    0% {
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+    }
+    50% {
+        -webkit-filter: grayscale(0.3);
+        filter: grayscale(0.3);
+    }
+    100% {
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+    }
