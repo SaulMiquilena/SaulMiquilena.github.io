@@ -1,7 +1,8 @@
 var misCabeceras = new Headers({
 								"Accept": "application/text",
 				    			"Content-Type": "text/plain",
-				    			"Access-Control-Allow-Origin": "*"
+				    			"Access-Control-Allow-Origin": "*",
+				    			"access-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwibWVzc2FnZSI6IkR1ZGUsIFdURiEiLCJpYXQiOjE1ODUxODQ4MDksImV4cCI6MTkwMDU0NDgwOX0.Mw8KoyYjdUpdbtR1gFm0g-sFyiTeYplvypS6UDsfh3Q"
 				    		});
 
 var miInit = { 	
