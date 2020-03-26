@@ -53,10 +53,8 @@ async function load() {
 
 			// load the image, and append it to the element id="image-holder"
 			loadImage(resultado[i].imagen)
-			    .then(img => document.getElementById('image-holder').replaceWith(img))
+			    .then(img => { img.height = 180; img.width = 350; document.getElementById('image-holder').replaceWith(img) })
 			    .catch(error => console.error(error));
-
-
 
 			for_post_html += `<article class="post">
 				<header>
@@ -69,12 +67,19 @@ async function load() {
 						<a href="about.html" class="author"><span class="name">Maribel Smith</span><img src="images/logo.jpg" alt="Maribel Smith | Escritora Freelance" /></a>
 					</div>
 				</header>
-				<a href="single.html?post=` + resultado[i].id + `" class="image featured">
-					<div id="image-holder">
-						<img src="images/pic01.jpg" alt="" class="loader_imagen"/>
+				<div class="row">
+					<div>
+						<a href="single.html?post=` + resultado[i].id + `">
+							<div id="image-holder">
+								<img src="images/pic01.jpg" alt="" width="350" height="180" class="image loader_imagen"/>
+							</div>
+						</a>
 					</div>
-				</a>
-				<p style="text-align: justify;">`+ resultado[i].previa +`</p>
+					<div style="width: 60vw">
+						<p style="text-align: justify;">`+ resultado[i].previa +`</p>
+						<li style="list-style: none;"><a href="single.html?post=` + resultado[i].id + `" class="button large">Continuar Leyendo</a></li>
+					</div>
+				</div>
 				<footer>
 					<ul class="actions"></ul>
 					<ul class="stats">
@@ -99,7 +104,6 @@ async function load() {
 			 setTimeout(() => { document.getElementById("all_posts").innerHTML = for_post_html; }, 5000);
 			
   	} else {
-  		/*-- POSTS --*/
 	  		for_post_html = `<article class="post">
 			<header>
 				<div class="title">
@@ -111,10 +115,17 @@ async function load() {
 					<a href="#" class="author"><span class="name">Sin Autor</span><img src="images/avatar.jpg" alt="" /></a>
 				</div>
 			</header>
-			<span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
-			<p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-			<p>Nunc quis dui scelerisque, scelerisque urna ut, dapibus orci. Sed vitae condimentum lectus, ut imperdiet quam. Maecenas in justo ut nulla aliquam sodales vel at ligula. Sed blandit diam odio, sed fringilla lectus molestie sit amet. Praesent eu tortor viverra lorem mattis pulvinar feugiat in turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce ullamcorper tellus sit amet mattis dignissim. Phasellus ut metus ligula. Curabitur nec leo turpis. Ut gravida purus quis erat pretium, sed pellentesque massa elementum. Fusce vestibulum porta augue, at mattis justo. Integer sed sapien fringilla, dapibus risus id, faucibus ante. Pellentesque mattis nunc sit amet tortor pellentesque, non placerat neque viverra. </p>
+			<div class="row">
+				<div>
+					<span class="image"><img src="images/pic01.jpg" width="350" height="180" alt="" /></span>
+				</div>
+				<div style="width: 60vw">
+					<p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>					
+					<li style="list-style: none;"><a href="#" class="button large">Continuar Leyendo</a></li>
+				</div>
+			</div>
 			<footer>
+				<ul class="actions"></ul>
 				<ul class="stats">
 					<li><a href="#">Categoría</a></li>
 				</ul>
