@@ -90,16 +90,69 @@
 
 // PREVENT CONTEXT MENU FROM OPENING
 document.addEventListener("contextmenu", function(evt){
-  evt.preventDefault();
+  	evt.preventDefault();
 }, false);
 
 // PREVENT CLIPBOARD COPYING
 document.addEventListener("copy", function(evt){
-  // Change the copied text if you want
-  evt.clipboardData.setData("text/plain", "Copying is not allowed on this webpage");
+  	// Change the copied text if you want
+  	evt.clipboardData.setData("text/plain", "Copying is not allowed on this webpage");
  
-  // Prevent the default copy action
-  evt.preventDefault();
+  	// Prevent the default copy action
+  	evt.preventDefault();
 }, false);
 
 const API_LOCATION = 'https://saulmiquilena.com.ve';
+
+var misCabeceras = new Headers({
+								"Accept": "application/text",
+				    			"Content-Type": "text/plain",
+				    			"Access-Control-Allow-Origin": "*",
+				    			"access-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwibWVzc2FnZSI6IkR1ZGUsIFdURiEiLCJpYXQiOjE1ODUxODQ4MDksImV4cCI6MTkwMDU0NDgwOX0.Mw8KoyYjdUpdbtR1gFm0g-sFyiTeYplvypS6UDsfh3Q"
+				    		});
+
+var miInit = { 	
+				method: "GET",
+				headers: misCabeceras
+			};
+
+async function load_categories() {
+	let data_categoria = null;
+	try {
+		let response_categoria = await fetch(API_LOCATION + '/api/cat/', miInit);
+		data_categoria = await response_categoria.json();
+	} catch(err) {
+	    data_categoria = { status: 500 };
+	}
+
+	let for_categoria_html = "";
+
+	if (await data_categoria.status == 200) {
+		/*-- CATEGORIAS --*/
+		let categorias = data_categoria.response;
+			
+		for_categoria_html = `<li><a href="index.html">Inicio</a></li>
+									<li><a href="about.html">Sobre mï</a></li>`;
+
+		for (var i = 0; i < categorias.length; i++) { 			
+
+	  		for_categoria_html += `<li>
+		  								<a href="catalogo.html?categoria=` + categorias[i].nombre + `">` + categorias[i].nombre + `</a>
+		  							</li>`;
+		}
+
+		document.getElementById("lista-catalogos").innerHTML = for_categoria_html;
+		document.getElementById("lista-catalogos-menu").innerHTML = for_categoria_html;
+
+	} else {
+	 	/*-- CATEGORIAS --*/
+
+		for_categoria_html = `<li><a href="index.html">Inicio</a></li>
+									<li><a href="about.html">Sobre mï</a></li>`;
+
+		document.getElementById("lista-catalogos").innerHTML = for_categoria_html;
+		document.getElementById("lista-catalogos-menu").innerHTML = for_categoria_html;
+	}
+}
+
+load_categories();

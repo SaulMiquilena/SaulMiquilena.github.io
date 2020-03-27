@@ -1,15 +1,3 @@
-var misCabeceras = new Headers({
-								"Accept": "application/text",
-				    			"Content-Type": "text/plain",
-				    			"Access-Control-Allow-Origin": "*",
-				    			"access-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwibWVzc2FnZSI6IkR1ZGUsIFdURiEiLCJpYXQiOjE1ODUxODQ4MDksImV4cCI6MTkwMDU0NDgwOX0.Mw8KoyYjdUpdbtR1gFm0g-sFyiTeYplvypS6UDsfh3Q"
-				    		});
-
-var miInit = { 	
-				method: "GET",
-				headers: misCabeceras
-			};
-
 async function load() {
 	let data = null;
   	try {
@@ -103,12 +91,12 @@ async function load() {
 	  		for_post_html = `<article class="post">
 			<header>
 				<div class="title">
-					<h2><a href="#">Magna sed adipiscing</a></h2>
+					<h2><a href="javascript:void(0)">Magna sed adipiscing</a></h2>
 					<p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
 				</div>
 				<div class="meta">
 					<time class="published" datetime="`+ today +`">`+ dd + ' de ' + month_text + ' de ' + yyyy +`</time>
-					<a href="#" class="author"><span class="name">Sin Autor</span><img src="images/avatar.jpg" alt="" /></a>
+					<a href="javascript:void(0)" class="author"><span class="name">Sin Autor</span><img src="images/avatar.jpg" alt="" /></a>
 				</div>
 			</header>
 			<span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
@@ -116,7 +104,7 @@ async function load() {
 			<p>Nunc quis dui scelerisque, scelerisque urna ut, dapibus orci. Sed vitae condimentum lectus, ut imperdiet quam. Maecenas in justo ut nulla aliquam sodales vel at ligula. Sed blandit diam odio, sed fringilla lectus molestie sit amet. Praesent eu tortor viverra lorem mattis pulvinar feugiat in turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce ullamcorper tellus sit amet mattis dignissim. Phasellus ut metus ligula. Curabitur nec leo turpis. Ut gravida purus quis erat pretium, sed pellentesque massa elementum. Fusce vestibulum porta augue, at mattis justo. Integer sed sapien fringilla, dapibus risus id, faucibus ante. Pellentesque mattis nunc sit amet tortor pellentesque, non placerat neque viverra. </p>
 			<footer>
 				<ul class="stats">
-					<li><a href="#">Categoría</a></li>
+					<li><a href="javascript:void(0)">Categoría</a></li>
 				</ul>
 			</footer>
 		</article>`; 

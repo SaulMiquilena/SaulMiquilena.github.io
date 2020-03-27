@@ -30,6 +30,15 @@
     -webkit-animation: loader 1s infinite ease-in-out;
 }
 
+.loader_nav {
+    height: 12px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: 50px;
+    animation: loader 1s infinite ease-in-out;
+    -webkit-animation: loader 1s infinite ease-in-out;
+}
+
 .loader_logo {
     animation: image-loader 1s infinite ease-in-out;
     -webkit-animation: image-loader 1s infinite ease-in-out;

@@ -1,15 +1,3 @@
-var misCabeceras = new Headers({
-								"Accept": "application/text",
-				    			"Content-Type": "text/plain",
-				    			"Access-Control-Allow-Origin": "*",
-				    			"access-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwibWVzc2FnZSI6IkR1ZGUsIFdURiEiLCJpYXQiOjE1ODUxODQ4MDksImV4cCI6MTkwMDU0NDgwOX0.Mw8KoyYjdUpdbtR1gFm0g-sFyiTeYplvypS6UDsfh3Q"
-				    		});
-
-var miInit = { 	
-				method: "GET",
-				headers: misCabeceras
-			};
-
 async function load() {
 	let data = null;
   	try {
@@ -87,22 +75,22 @@ async function load() {
   		for_post_html = `<article class="post">
 			<header>
 				<div class="title">
-					<h2><a href="#">Magna sed adipiscing</a></h2>
+					<h2><a href="javascript:void(0)">Magna sed adipiscing</a></h2>
 					<p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
 				</div>
 				<div class="meta">
 					<time class="published" datetime="`+ today +`">`+ dd + ' de ' + month_text + ' de ' + yyyy +`</time>
-					<a href="#" class="author"><span class="name">Sin Autor</span><img src="images/avatar.jpg" alt="" /></a>
+					<a href="javascript:void(0)" class="author"><span class="name">Sin Autor</span><img src="images/avatar.jpg" alt="" /></a>
 				</div>
 			</header>
 			<a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
 			<p style="text-align: justify;">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
 			<footer>
 				<ul class="actions">
-					<li><a href="#" class="button large">Continuar Leyendo</a></li>
+					<li><a href="javascript:void(0)" class="button large">Continuar Leyendo</a></li>
 				</ul>
 				<ul class="stats">
-						<li><a href="#">Categoría</a></li>
+						<li><a href="javascript:void(0)">Categoría</a></li>
 					</ul>
 			</footer>
 		</article>`; 
@@ -159,18 +147,19 @@ async function load() {
 								<article>
 									<header>
 										<div class="row">
-											<h3><a href="#">Lorem ipsum fermentum ut nisl vitae</a></h3>
+											<h3><a href="javascript:void(0)">Lorem ipsum fermentum ut nisl vitae</a></h3>
 										</div>
 										<div class="row">
 											<p>Sin Categoría</p>
 										</div>
 									</header>
-									<a href="#" class="image"><img src="images/pic11.jpg" alt="" /></a>
+									<a href="javascript:void(0)" class="image"><img src="images/pic11.jpg" alt="" /></a>
 								</article>
 							</li>`;
 
 		document.getElementById("posts_list").innerHTML = for_post_list_html;
   	}
+
 }
 
 load();
