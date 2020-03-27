@@ -120,7 +120,7 @@ async function load() {
 			    .then(img => { img.height = 64; img.width = 64; document.getElementById('image-holder-list').replaceWith(img) })
 			    .catch(error => console.error(error));		    
 
-	  		for_post_list_html = `<li>
+	  		for_post_list_html += `<li>
 									<article>
 										<header>
 											<div class="row">
