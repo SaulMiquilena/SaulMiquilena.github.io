@@ -48,7 +48,7 @@ async function load() {
 					</div>
 					<div class="meta">
 						<time class="published" datetime="`+ resultado[i].fecha_publicacion +`">`+ resultado[i].fecha_nombre +`</time>
-						<a href="about.html" class="author"><span class="name">Maribel Smith</span><img src="images/logo.jpg" alt="Maribel Smith | Escritora Freelance" /></a>
+						<a href="about.html" class="author"><span class="name">Maribel Smith</span><img src="images/logo.jpg" alt="Maribel Smith | Escritora" /></a>
 					</div>
 				</header>
 				<a href="single.html?post=` + resultado[i].id + `" class="image featured">
