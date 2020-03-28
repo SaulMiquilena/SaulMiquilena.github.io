@@ -44,7 +44,7 @@ async function load() {
 			    .then(img => { img.height = 180; img.width = 350; document.getElementById('image-holder').replaceWith(img) })
 			    .catch(error => console.error(error));
 
-			for_post_html += `<article class="post">
+			for_post_html += `<article class="post ` + resultado[i].categoria + `">
 				<header>
 					<div class="title">
 						<h2><a href="single.html?post=` + resultado[i].id + `">` + resultado[i].titulo + `</a></h2>
