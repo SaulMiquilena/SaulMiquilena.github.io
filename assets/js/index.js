@@ -48,12 +48,12 @@ async function load() {
 					</div>
 					<div class="meta">
 						<time class="published" datetime="`+ resultado[i].fecha_publicacion +`">`+ resultado[i].fecha_nombre +`</time>
-						<a href="about.html" class="author"><span class="name">Maribel Smith</span><img src="images/logo.jpg" alt="Maribel Smith | Escritora" /></a>
+						<a href="about.html" class="author"><span class="name">Maribel Smith</span><img src="assets/images/logo.jpg" alt="Maribel Smith | Escritora" /></a>
 					</div>
 				</header>
 				<a href="single.html?post=` + resultado[i].id + `" class="image featured">
 					<div id="image-holder">
-						<img src="images/pic01.jpg" width="829" height="338" alt="" class="loader_imagen"/>
+						<img src="assets/images/pic01.jpg" width="829" height="338" alt="" class="loader_imagen"/>
 					</div>
 				</a>
 				<p style="text-align: justify;">`+ resultado[i].previa +`</p>
@@ -79,10 +79,10 @@ async function load() {
 				</div>
 				<div class="meta">
 					<time class="published" datetime="`+ today +`">`+ dd + ' de ' + month_text + ' de ' + yyyy +`</time>
-					<a href="javascript:void(0)" class="author"><span class="name">Sin Autor</span><img src="images/avatar.jpg" alt="" /></a>
+					<a href="javascript:void(0)" class="author"><span class="name">Sin Autor</span><img src="assets/images/avatar.jpg" alt="" /></a>
 				</div>
 			</header>
-			<a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+			<a href="single.html" class="image featured"><img src="assets/images/pic01.jpg" alt="" /></a>
 			<p style="text-align: justify;">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
 			<footer>
 				<ul class="actions">
@@ -131,7 +131,7 @@ async function load() {
 										</header>
 										<a href="single.html?post=` + lista[i].id + `" class="image">											
 											<div id="image-holder-list">
-												<img src="images/pic08.jpg"alt="" class="loader_imagen"/>
+												<img src="assets/images/pic08.jpg"alt="" class="loader_imagen"/>
 											</div>
 										</a>
 									</article>
@@ -152,7 +152,7 @@ async function load() {
 											<p>Sin Categoría</p>
 										</div>
 									</header>
-									<a href="javascript:void(0)" class="image"><img src="images/pic11.jpg" alt="" /></a>
+									<a href="javascript:void(0)" class="image"><img src="assets/images/pic11.jpg" alt="" /></a>
 								</article>
 							</li>`;
 
