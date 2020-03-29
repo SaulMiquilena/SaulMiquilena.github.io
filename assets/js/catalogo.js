@@ -71,7 +71,7 @@ async function load() {
 				<footer>
 					<ul class="actions"></ul>
 					<ul class="stats">
-						<li><a href="catalog.html?categoria=` + resultado[i].categoria + `">` + resultado[i].categoria + `</a></li>
+						<li><a href="catalogo.html?categoria=` + resultado[i].categoria + `">` + resultado[i].categoria + `</a></li>
 					</ul>
 				</footer>
 			</article>`;
