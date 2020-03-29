@@ -63,7 +63,7 @@ async function load() {
 							</div>
 						</a>
 					</div>
-					<div style="width: 60vw">
+					<div class="single_previa">
 						<p style="text-align: justify;">`+ resultado[i].previa +`</p>
 						<li style="list-style: none;"><a href="single.html?post=` + resultado[i].id + `" class="button large">Continuar Leyendo</a></li>
 					</div>
@@ -107,7 +107,7 @@ async function load() {
 				<div>
 					<span class="image"><img src="assets/images/pic01.jpg" width="350" height="180" alt="" /></span>
 				</div>
-				<div style="width: 60vw">
+				<div class="single_previa">
 					<p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>					
 					<li style="list-style: none;"><a href="javascript:void(0)" class="button large">Continuar Leyendo</a></li>
 				</div>
