@@ -62,7 +62,7 @@ async function load() {
 						<li><a href="single.html?post=` + resultado[i].id + `" class="button large">Continuar Leyendo</a></li>
 					</ul>
 					<ul class="stats">
-						<li><a href="catalogo.html?categoria=` + resultado[i].categoria + `">` + resultado[i].categoria + `</a></li>
+						<li><a href="catalogo.html?categoria=` + resultado[i].categoria + `" >` + resultado[i].categoria + `</a></li>
 					</ul>
 				</footer>
 			</article>`;
