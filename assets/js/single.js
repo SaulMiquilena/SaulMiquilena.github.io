@@ -52,12 +52,12 @@ async function load() {
 					</div>
 					<div class="meta">
 						<time class="published" datetime="`+ resultado[i].fecha_publicacion +`">`+ resultado[i].fecha_nombre +`</time>
-						<a href="about.html" class="author"><span class="name">Maribel Smith</span><img src="assets/images/logo.jpg" alt="Maribel Smith | Escritora" /></a>
+						<a href="about.html" class="author"><span class="name">Maribel Smith</span><img src="assets/images/logo.webp" alt="Maribel Smith | Escritora" /></a>
 					</div>
 				</header>
 				<a href="single.html?post=` + resultado[i].id + `" class="image featured">
 					<div id="image-holder">
-						<img src="assets/images/pic01.jpg" alt="" class="loader_imagen"/>
+						<img src="assets/images/pic01.webp" alt="" class="loader_imagen"/>
 					</div>
 				</a>
 				<p style="text-align: justify;">`+ resultado[i].articulo +`</p>
@@ -94,10 +94,10 @@ async function load() {
 				</div>
 				<div class="meta">
 					<time class="published" datetime="`+ today +`">`+ dd + ' de ' + month_text + ' de ' + yyyy +`</time>
-					<a href="javascript:void(0)" class="author"><span class="name">Sin Autor</span><img src="assets/images/avatar.jpg" alt="" /></a>
+					<a href="javascript:void(0)" class="author"><span class="name">Sin Autor</span><img src="assets/images/avatar.webp" alt="" /></a>
 				</div>
 			</header>
-			<span class="image featured"><img src="assets/images/pic01.jpg" alt="" /></span>
+			<span class="image featured"><img src="assets/images/pic01.webp" alt="" /></span>
 			<p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
 			<p>Nunc quis dui scelerisque, scelerisque urna ut, dapibus orci. Sed vitae condimentum lectus, ut imperdiet quam. Maecenas in justo ut nulla aliquam sodales vel at ligula. Sed blandit diam odio, sed fringilla lectus molestie sit amet. Praesent eu tortor viverra lorem mattis pulvinar feugiat in turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce ullamcorper tellus sit amet mattis dignissim. Phasellus ut metus ligula. Curabitur nec leo turpis. Ut gravida purus quis erat pretium, sed pellentesque massa elementum. Fusce vestibulum porta augue, at mattis justo. Integer sed sapien fringilla, dapibus risus id, faucibus ante. Pellentesque mattis nunc sit amet tortor pellentesque, non placerat neque viverra. </p>
 			<footer>

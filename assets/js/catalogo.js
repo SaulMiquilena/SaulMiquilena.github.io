@@ -52,14 +52,14 @@ async function load() {
 					</div>
 					<div class="meta">
 						<time class="published" datetime="`+ resultado[i].fecha_publicacion +`">`+ resultado[i].fecha_nombre +`</time>
-						<a href="about.html" class="author"><span class="name">Maribel Smith</span><img src="assets/images/logo.jpg" alt="Maribel Smith | Escritora" /></a>
+						<a href="about.html" class="author"><span class="name">Maribel Smith</span><img src="assets/images/logo.webp" alt="Maribel Smith | Escritora" /></a>
 					</div>
 				</header>
 				<div class="row">
 					<div>
 						<a href="single.html?post=` + resultado[i].id + `">
 							<div id="image-holder">
-								<img src="assets/images/pic01.jpg" alt="" width="350" height="180" class="image loader_imagen"/>
+								<img src="assets/images/pic01.webp" alt="" width="350" height="180" class="image loader_imagen"/>
 							</div>
 						</a>
 					</div>
@@ -100,12 +100,12 @@ async function load() {
 				</div>
 				<div class="meta">
 					<time class="published" datetime="`+ today +`">`+ dd + ' de ' + month_text + ' de ' + yyyy +`</time>
-					<a href="javascript:void(0)" class="author"><span class="name">Sin Autor</span><img src="assets/images/avatar.jpg" alt="" /></a>
+					<a href="javascript:void(0)" class="author"><span class="name">Sin Autor</span><img src="assets/images/avatar.webp" alt="" /></a>
 				</div>
 			</header>
 			<div class="row">
 				<div>
-					<span class="image"><img src="assets/images/pic01.jpg" width="350" height="180" alt="" /></span>
+					<span class="image"><img src="assets/images/pic01.webp" width="350" height="180" alt="" /></span>
 				</div>
 				<div class="single_previa">
 					<p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>					

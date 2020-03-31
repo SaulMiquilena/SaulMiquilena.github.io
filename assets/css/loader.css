@@ -78,6 +78,46 @@
     -webkit-animation: loader 1s infinite ease-in-out;
 }
 
+
+@media screen and (max-width: 480px) {
+    .loader_titulo {
+        height: 30px;
+        margin: 10px;
+        width: calc(50% + 3em);
+        animation: loader 1s infinite ease-in-out;
+        -webkit-animation: loader 1s infinite ease-in-out;
+    }
+
+    .loader_subtitulo {
+        height: 15px;
+        margin: 10px;
+        width: calc(80% + 3em);
+        animation: loader 1s infinite ease-in-out;
+        -webkit-animation: loader 1s infinite ease-in-out;
+    }
+
+    .loader_imagen {
+        margin-left: -1.5em;
+        margin-top: calc(-1.5em - 1px);
+        width: calc(100% + 3em);
+        animation: image-loader 1s infinite ease-in-out;
+        -webkit-animation: image-loader 1s infinite ease-in-out;
+    }
+
+    .loader_articulo {
+        height: 10px;
+        margin: 10px;
+        width: calc(90% + 3em);
+        animation: loader 1s infinite ease-in-out;
+        -webkit-animation: loader 1s infinite ease-in-out;
+        margin-left: 0px;
+        margin-right: 200em;
+        left: -7px;
+        position: relative;
+    }
+}
+
+
 @keyframes loader {
     0% {
         background-color: rgba(255, 116, 140, 0.1);
