@@ -102,7 +102,7 @@ document.addEventListener("copy", function(evt){
   	evt.preventDefault();
 }, false);
 
-const API_LOCATION = 'https://maribelapi.saulmiquilena.com.ve';
+const API_LOCATION = 'https://maribelapi.saulmiquilena.xyz';
 
 var misCabeceras = new Headers({
 								"Accept": "application/text",
