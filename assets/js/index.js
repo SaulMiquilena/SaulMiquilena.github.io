@@ -1,7 +1,7 @@
 async function load() {
 	let data = null;
   	try {
-  		let response = await fetch(API_LOCATION + '/api/posts/2', miInit);
+  		let response = await fetch(API_LOCATION + '/api/posts/10', miInit);
   		data = await response.json();
   	} catch(err) {
 	    data = { status: 500 };
